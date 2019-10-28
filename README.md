@@ -59,6 +59,16 @@ Once a sheet is "published to web" use the id from the URL and the sheet number 
 }
 ```
 
+## Deploying your own instance
+
+Once your AWS credentials are configured on your CLI, it should be as simple as:
+
+```
+> pipenv install
+> pipenv run zappa init
+> pipenv run zappa deploy
+```
+
 ---
 
 \* it's actually quite a bit worse, it only supports sheets with single-row headers
